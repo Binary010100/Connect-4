@@ -212,7 +212,7 @@ function checkForMoveVictory(){
   if(!checkForVictory(currentRow,currentCol)){
     placeDisc(3-currentPlayer);
   } else {
-    var ww = currentPlayer == 2 ? 'Computer' : 'Player';
+    var ww = currentPlayer === 2 ? 'Computer' : 'Player';
     placeDisc(3-currentPlayer);
     alert(ww+" win!");
     board.innerHTML = "";
